@@ -8,7 +8,39 @@
 </head>
 
 <body>
-
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        <label for="number" id="number-label">Age <span>(optional)</span></label>
+        <input type="number" id="number" min="18" max="102" placeholder="Age">
+        <label for="drop-down">Which option best describes your current role?</label>
+        <select name="drop-down" id="dropdown" placeholder="Select a choice">
+            <option disabled selected value="choose one">Select current option below</option>
+            <option value="Computer Engineer">Computer Engineer</option>
+            <option value="Sofware Developer">Sofware Developer</option>
+        </select>
+        <p>Would you recommend free code camp to a friend?</p>
+        <input type="radio" id="definately" name="button" value="Definately">
+        <label for="definately">Definately</label>
+        <input type="radio" id="maybe" name="button" value="Maybe">
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="notsure" name="button" value="Not Sure">
+        <label for="notsure">Not Sure</label>
+        <p>What would you see improved? <span>(check all that apply)</span></p>
+        <input type="checkbox" id="frontend" value="Front-end-Projects">
+        <label for="frontend">Front-end Projects</label>
+        <input type="checkbox" id="backend" value="Back-end-Projects">
+        <label for="backend">Back-end Projects</label>
+        <input type="checkbox" id="datavis" value="Data-Visualization">
+        <label for="datavis">Data Visualization</label>
+        <p>Anything else?</p>
+        <textarea name="extras" id="extra" cols="20" rows="10" placeholder="Enter text here"></textarea>
+        <input type="submit" id="submit">
+    </form>
 </body>
 
 </html>
