@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    text-align: center;
+    background: linear-gradient(to right, white, crimson);
+}
+
+form {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+textarea {
+    width: 200px;
+    height: 40%;
+}
+
+label {
+    padding: 5px;
+}
